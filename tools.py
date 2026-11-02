@@ -43,7 +43,7 @@ def _product_view(r) -> dict:
     return d
 
 def search_products(query: str = "", category: str = "", max_price: float | None = None,
-                    min_price: float | None = None, only_in_stock: bool = True, limit: int = 10) -> list[dict]:
+                    min_price: float | None = None, only_in_stock: bool = True, limit: int = 30) -> list[dict]:
     """Search the catalog by free text (name/description/specs), category, and price range."""
     df = products
     if category:
